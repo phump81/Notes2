@@ -1,3 +1,11 @@
-var element = document.getElementById("app")
+(function(exports) {
+  function NoteController(notelist) {
+    this.view = new NoteListView(notelist);
+  }
 
-element.innerHTML = "Howdy";
+  NoteController.prototype.updateAppElement = function() {
+    document.getElementById("app").innerHTML = this.view.getHTML();
+  }
+
+  exports.NoteController = NoteController;
+})(this);

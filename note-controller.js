@@ -11,10 +11,10 @@
 })(this);
 
 var notelist = new NoteList();
-notelist.createNew('Did it work?')
-notelist.createNew('I doubt it')
-notelist.createNew('Why not?')
-notelist.createNew('F*ck knows!')
+notelist.createNew("Wouldn't you like to now what the whole note says?")
+notelist.createNew('This note, though slightly longer, is still of little interest.')
+notelist.createNew('I trip. I pretend to run. I carry on running.')
+notelist.createNew('Dayman. Fighter of the Nightman. Champion of the Sun.')
 var controller = new NoteController(notelist);
 controller.updateAppElement();
 
@@ -40,4 +40,4 @@ makeUrlChangeShowNoteForCurrentPage();
   function getNote(number) {
     return notelist.notes[number].text
   }
-  };
+};

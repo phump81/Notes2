@@ -13,5 +13,4 @@
     var note = new Note(text)
     this.notes.push(note)
     };
-
 })(this);
